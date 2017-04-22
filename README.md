@@ -1,4 +1,7 @@
-# test coverage for  [grunt-eslint (v19.0.0)](https://github.com/sindresorhus/grunt-eslint#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-eslint.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-eslint) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-eslint.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-eslint)
+# npmtest-grunt-eslint
+
+#### basic test coverage for  grunt-eslint (v19.0.0)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-eslint.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-eslint) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-eslint.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-eslint)
+
 #### Validate files with ESLint
 
 [![NPM](https://nodei.co/npm/grunt-eslint.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/grunt-eslint)
@@ -32,36 +35,24 @@
 ```json
 
 {
+    "name": "grunt-eslint",
+    "version": "19.0.0",
+    "description": "Validate files with ESLint",
+    "license": "MIT",
+    "repository": "sindresorhus/grunt-eslint",
     "author": {
         "name": "Sindre Sorhus",
         "url": "sindresorhus.com"
     },
-    "bugs": {
-        "url": "https://github.com/sindresorhus/grunt-eslint/issues"
-    },
-    "dependencies": {
-        "chalk": "^1.0.0",
-        "eslint": "^3.0.0"
-    },
-    "description": "Validate files with ESLint",
-    "devDependencies": {
-        "grunt": "^1.0.1",
-        "grunt-cli": "^1.2.0",
-        "grunt-shell": "^1.1.1"
-    },
-    "directories": {},
-    "dist": {
-        "shasum": "bb74c379061599cec1f66169def2a89d862d861b",
-        "tarball": "https://registry.npmjs.org/grunt-eslint/-/grunt-eslint-19.0.0.tgz"
-    },
     "engines": {
         "node": ">=4"
+    },
+    "scripts": {
+        "test": "grunt"
     },
     "files": [
         "tasks"
     ],
-    "gitHead": "c4d67329e8fe14f0c02006f847681697cefc12ce",
-    "homepage": "https://github.com/sindresorhus/grunt-eslint#readme",
     "keywords": [
         "gruntplugin",
         "lint",
@@ -72,28 +63,22 @@
         "ecmascript",
         "esprima"
     ],
-    "license": "MIT",
-    "maintainers": [
-        {
-            "name": "sindresorhus"
-        }
-    ],
-    "name": "grunt-eslint",
-    "optionalDependencies": {},
+    "dependencies": {
+        "chalk": "^1.0.0",
+        "eslint": "^3.0.0"
+    },
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-cli": "^1.2.0",
+        "grunt-shell": "^1.1.1"
+    },
     "peerDependencies": {
         "grunt": ">=0.4.0"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/sindresorhus/grunt-eslint.git"
-    },
-    "scripts": {
-        "test": "grunt"
-    },
-    "version": "19.0.0",
     "xo": {
         "esnext": true
-    }
+    },
+    "bin": {}
 }
 ```
 
